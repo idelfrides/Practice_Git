@@ -13,30 +13,25 @@ def main_method():
         "value4": 3
     }
 
-    user_values = ()
-    print("\n\n Enter some values separeted by commer\n")
+    user_values = {}
     try:
         user_values = input("\n\n Enter some values:  ")
     except Exception as exec_error:
         print(exec_error)
         exit(0)
     else:
-        # print(type(user_values), '\n Value: ', user_values)
-        user_values = user_values.strip().split(',')
-        # import pdb; pdb.set_trace()
 
+        print(user_values)
+        # user_values = list(user_values)
+        # user_values = user_values.split(',')
+
+    # print(user_values)
     result = ml.sum_dict(my_values)
-    print("\n\n MY VALUES: {}".format(result))
 
-    user_values_help = list(user_values)
-    user_values.clear()
-    for value in user_values_help:
-        user_values.append(int(value))   
-    
-    result = ml.sum_list(user_values)
-    print("\n\n USER VALUES: {}".format(result))
+    # result = ml.sum_method(user_values)
 
-    print("\n\n\n")
+    print(result)
+
 
 
 

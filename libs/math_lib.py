@@ -6,8 +6,6 @@
 class MathLib(object):
 
     def sum_dict(self, dict_values):
-        """ Sum a dict of values """
-
         total_sum = 0
         if dict_values:
             for key in dict_values.keys():
@@ -19,8 +17,6 @@ class MathLib(object):
 
 
     def sum_list(self, list_values):
-        """ Sum a list of values """
-        
         total_sum = 0
         for value in list_values:
             total_sum += value
