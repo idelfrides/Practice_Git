@@ -20,13 +20,12 @@ def main_method():
         print(exec_error)
         exit(0)
     else:
+        # print(type(user_values), '\n Value: ', user_values)
+        user_values = user_values.strip().split(',')
         print(user_values)
 
     result = ml.sum_dict(my_values)
-
-
     print(result)
-
 
 
 
