@@ -13,8 +13,12 @@ class MathLib(object):
         return total_sum
 
 
+    def sum_list(self, list_values):
+        total_sum = 0
+        for value in list_values:
+            total_sum += value
 
-
+        return total_sum
 
 
 
