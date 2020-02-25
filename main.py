@@ -23,7 +23,6 @@ def main_method():
     else:
         # print(type(user_values), '\n Value: ', user_values)
         user_values = user_values.strip().split(',')
-        # import pdb; pdb.set_trace()
 
     result = ml.sum_dict(my_values)
     print("\n\n MY VALUES: {}".format(result))
@@ -37,7 +36,6 @@ def main_method():
     print("\n\n USER VALUES: {}".format(result))
 
     print("\n\n\n")
-
 
 
 if __name__=='__main__':
